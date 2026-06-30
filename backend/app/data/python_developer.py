@@ -1,0 +1,211 @@
+PYTHON_DEVELOPER = {
+    "id": "python-developer",
+    "name": "Python Developer",
+    "tagline": "From core syntax to production-grade backend systems",
+    "icon": "🐍",
+    "color": "#FFD700",
+    "stages": [
+        {
+            "id": "py-foundations",
+            "title": "Foundations",
+            "subtitle": "Core language, tooling and version control",
+            "order": 1,
+            "topics": [
+                {
+                    "id": "py-syntax",
+                    "title": "Python Syntax & Core Data Types",
+                    "description": "Variables, control flow, functions, lists, dicts, sets, tuples, comprehensions.",
+                    "level": "beginner",
+                    "estimated_hours": 20,
+                    "resources": [
+                        {"title": "Official Python Tutorial", "url": "https://docs.python.org/3/tutorial/index.html", "type": "docs"},
+                        {"title": "Real Python - Python Basics", "url": "https://realpython.com/python-first-steps/", "type": "article"},
+                        {"title": "freeCodeCamp Python Course", "url": "https://www.freecodecamp.org/news/python-for-beginners/", "type": "course"},
+                    ],
+                },
+                {
+                    "id": "py-oop",
+                    "title": "Object Oriented Programming",
+                    "description": "Classes, inheritance, dunder methods, dataclasses, composition vs inheritance.",
+                    "level": "beginner",
+                    "estimated_hours": 15,
+                    "resources": [
+                        {"title": "Real Python - OOP in Python 3", "url": "https://realpython.com/python3-object-oriented-programming/", "type": "article"},
+                        {"title": "Python Docs - Classes", "url": "https://docs.python.org/3/tutorial/classes.html", "type": "docs"},
+                        {"title": "Python Dataclasses Guide", "url": "https://realpython.com/python-data-classes/", "type": "article"},
+                    ],
+                },
+                {
+                    "id": "py-env-tooling",
+                    "title": "Environments, pip & Git",
+                    "description": "Virtual environments, dependency management, Git basics and GitHub workflow.",
+                    "level": "beginner",
+                    "estimated_hours": 10,
+                    "resources": [
+                        {"title": "Python venv Docs", "url": "https://docs.python.org/3/library/venv.html", "type": "docs"},
+                        {"title": "Real Python - pip & venv Guide", "url": "https://realpython.com/python-virtual-environments-a-primer/", "type": "article"},
+                        {"title": "Pro Git Book (free)", "url": "https://git-scm.com/book/en/v2", "type": "docs"},
+                    ],
+                },
+            ],
+        },
+        {
+            "id": "py-intermediate",
+            "title": "Intermediate Python",
+            "subtitle": "Writing clean, Pythonic, testable code",
+            "order": 2,
+            "topics": [
+                {
+                    "id": "py-advanced-functions",
+                    "title": "Decorators, Generators & Context Managers",
+                    "description": "Closures, decorators, generators/yield, iterators, context managers (with).",
+                    "level": "intermediate",
+                    "estimated_hours": 12,
+                    "resources": [
+                        {"title": "Real Python - Decorators Primer", "url": "https://realpython.com/primer-on-python-decorators/", "type": "article"},
+                        {"title": "Real Python - Generators", "url": "https://realpython.com/introduction-to-python-generators/", "type": "article"},
+                        {"title": "Python Docs - Context Managers", "url": "https://docs.python.org/3/reference/datamodel.html#context-managers", "type": "docs"},
+                    ],
+                },
+                {
+                    "id": "py-typing",
+                    "title": "Type Hints & Static Analysis",
+                    "description": "typing module, mypy, pydantic models for validation.",
+                    "level": "intermediate",
+                    "estimated_hours": 8,
+                    "resources": [
+                        {"title": "Python Docs - typing", "url": "https://docs.python.org/3/library/typing.html", "type": "docs"},
+                        {"title": "Real Python - Type Checking Guide", "url": "https://realpython.com/python-type-checking/", "type": "article"},
+                        {"title": "Pydantic Documentation", "url": "https://docs.pydantic.dev/latest/", "type": "docs"},
+                    ],
+                },
+                {
+                    "id": "py-testing",
+                    "title": "Testing with pytest",
+                    "description": "Unit tests, fixtures, mocking, coverage, TDD basics.",
+                    "level": "intermediate",
+                    "estimated_hours": 10,
+                    "resources": [
+                        {"title": "pytest Documentation", "url": "https://docs.pytest.org/en/stable/", "type": "docs"},
+                        {"title": "Real Python - Testing With pytest", "url": "https://realpython.com/pytest-python-testing/", "type": "article"},
+                    ],
+                },
+                {
+                    "id": "py-concurrency",
+                    "title": "Concurrency & Async IO",
+                    "description": "Threading, multiprocessing, asyncio, async/await patterns.",
+                    "level": "intermediate",
+                    "estimated_hours": 14,
+                    "resources": [
+                        {"title": "Python Docs - asyncio", "url": "https://docs.python.org/3/library/asyncio.html", "type": "docs"},
+                        {"title": "Real Python - Async IO in Python", "url": "https://realpython.com/async-io-python/", "type": "article"},
+                    ],
+                },
+            ],
+        },
+        {
+            "id": "py-backend",
+            "title": "Backend Engineering",
+            "subtitle": "APIs, databases and FastAPI mastery",
+            "order": 3,
+            "topics": [
+                {
+                    "id": "py-fastapi",
+                    "title": "FastAPI Deep Dive",
+                    "description": "Routing, Pydantic schemas, dependency injection, middleware, background tasks.",
+                    "level": "intermediate",
+                    "estimated_hours": 25,
+                    "resources": [
+                        {"title": "FastAPI Official Docs", "url": "https://fastapi.tiangolo.com/", "type": "docs"},
+                        {"title": "FastAPI - Bigger Applications Structure", "url": "https://fastapi.tiangolo.com/tutorial/bigger-applications/", "type": "docs"},
+                        {"title": "Real Python - FastAPI Guide", "url": "https://realpython.com/fastapi-python-web-apis/", "type": "article"},
+                    ],
+                },
+                {
+                    "id": "py-databases",
+                    "title": "Databases: SQL & ORMs",
+                    "description": "PostgreSQL, SQLAlchemy ORM, Alembic migrations, indexing basics.",
+                    "level": "intermediate",
+                    "estimated_hours": 20,
+                    "resources": [
+                        {"title": "SQLAlchemy Documentation", "url": "https://docs.sqlalchemy.org/en/20/", "type": "docs"},
+                        {"title": "FastAPI - SQL Databases", "url": "https://fastapi.tiangolo.com/tutorial/sql-databases/", "type": "docs"},
+                        {"title": "Alembic Documentation", "url": "https://alembic.sqlalchemy.org/en/latest/", "type": "docs"},
+                    ],
+                },
+                {
+                    "id": "py-auth",
+                    "title": "Authentication & Security",
+                    "description": "OAuth2, JWT, password hashing, role-based access control.",
+                    "level": "advanced",
+                    "estimated_hours": 14,
+                    "resources": [
+                        {"title": "FastAPI - Security Tutorial", "url": "https://fastapi.tiangolo.com/tutorial/security/", "type": "docs"},
+                        {"title": "JWT.io Introduction", "url": "https://jwt.io/introduction", "type": "article"},
+                    ],
+                },
+                {
+                    "id": "py-caching",
+                    "title": "Caching & Background Jobs",
+                    "description": "Redis caching, Celery task queues, rate limiting.",
+                    "level": "advanced",
+                    "estimated_hours": 12,
+                    "resources": [
+                        {"title": "Redis Documentation", "url": "https://redis.io/docs/latest/", "type": "docs"},
+                        {"title": "Celery Documentation", "url": "https://docs.celeryq.dev/en/stable/", "type": "docs"},
+                    ],
+                },
+            ],
+        },
+        {
+            "id": "py-production",
+            "title": "Production & DevOps",
+            "subtitle": "Shipping and scaling your services",
+            "order": 4,
+            "topics": [
+                {
+                    "id": "py-docker",
+                    "title": "Docker & Containers",
+                    "description": "Dockerfile, docker-compose, multi-stage builds for Python apps.",
+                    "level": "intermediate",
+                    "estimated_hours": 12,
+                    "resources": [
+                        {"title": "Docker Docs - Python Guide", "url": "https://docs.docker.com/language/python/", "type": "docs"},
+                        {"title": "FastAPI in Containers", "url": "https://fastapi.tiangolo.com/deployment/docker/", "type": "docs"},
+                    ],
+                },
+                {
+                    "id": "py-cicd",
+                    "title": "CI/CD Pipelines",
+                    "description": "GitHub Actions for tests, linting and automated deployment.",
+                    "level": "advanced",
+                    "estimated_hours": 10,
+                    "resources": [
+                        {"title": "GitHub Actions Documentation", "url": "https://docs.github.com/en/actions", "type": "docs"},
+                    ],
+                },
+                {
+                    "id": "py-observability",
+                    "title": "Logging, Monitoring & Observability",
+                    "description": "Structured logging, Prometheus metrics, error tracking.",
+                    "level": "advanced",
+                    "estimated_hours": 10,
+                    "resources": [
+                        {"title": "Python Logging HOWTO", "url": "https://docs.python.org/3/howto/logging.html", "type": "docs"},
+                        {"title": "Prometheus Python Client", "url": "https://github.com/prometheus/client_python", "type": "docs"},
+                    ],
+                },
+                {
+                    "id": "py-system-design-basics",
+                    "title": "Scalable Backend Architecture",
+                    "description": "Load balancing, horizontal scaling, microservices vs monolith for Python services.",
+                    "level": "advanced",
+                    "estimated_hours": 15,
+                    "resources": [
+                        {"title": "System Design Primer (GitHub)", "url": "https://github.com/donnemartin/system-design-primer", "type": "article"},
+                    ],
+                },
+            ],
+        },
+    ],
+}
