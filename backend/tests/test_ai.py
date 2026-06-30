@@ -1,4 +1,4 @@
-def _auth_headers(client, email="[email protected]"):
+def _auth_headers(client, email="tester@example.com"):
     client.post("/api/v1/auth/register", json={"email": email, "password": "password123"})
     res = client.post("/api/v1/auth/login", data={"username": email, "password": "password123"})
     token = res.json()["access_token"]
