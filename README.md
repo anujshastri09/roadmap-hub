@@ -150,7 +150,7 @@ pytest -v
 
 CI runs this automatically (plus a frontend production build) on every push via `.github/workflows/ci.yml`.
 
-## 🧠 Why this is a good resume project
+## 🧠 about this project
 
 - Real authentication (JWT + bcrypt) and a relational data model (SQLAlchemy ORM, foreign keys, unique constraints)
 - **LLM integration done properly**: structured JSON generation with validation/caching, token-by-token streaming via Server-Sent Events, a RAG-lite assistant that grounds answers in retrieved roadmap data, moderation controls (regenerate/delete), and graceful degradation when no API key is present
